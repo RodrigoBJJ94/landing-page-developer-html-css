@@ -259,6 +259,18 @@ display: none;
     border: 0.1rem solid var(--primary-color);
 }
 @media (max-width: 800px) {
+    h2 {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }
