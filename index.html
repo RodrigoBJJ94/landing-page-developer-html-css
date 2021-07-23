@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked =false;"><a href="#home">HOME</a></h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Conhecimentos</a></li>
+                    <li><a href="#grid-one">Tecnologias</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Desen- volvedor Front- end</h2>
+                <p>Sou um desenvolvedor/programador, essa é minha primeira landing page, nela foi usado praticamente só HTML e CSS, mas também um pouco de Javascript. </p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/javascript.svg"
+                    alt="Um homem segurando o logo do CSS, uma mulher empurando o logo do Javascript para o lado direito e outro homem segurando e analisando o logo do HTML">
+            </div>
+        </div>
+    </section>
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h3>Conhecimentos</h3>
+            <p>Conhecimento nas linguagens: Javascript, HTML, CSS, EJS, Python e Java.</p>
+            <p>Conhecimento nos frameworks/bibliotecas: React e Bootstrap.</p>
+            <p>Conhecimento nos bancos de dados: MongoDB, MariaDB e PostgreSQL.</p>
+            <p>Conhecimento nas tecnologias: Node.js, Git, GitHub Desktop, MySQL Workbench e Insomnia.</p>
+            <p>Conhecimento nos editores/IDE: Visual Studio Code, PyCharm e NetBeans.</p>
+        </div>
+    </section>
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h3 class="grid-main-heading">Tecnologias</h3>
+            <p class="grid-description">Tecnologias usadas nessa landing page</p>
+            <div class="grid">
+                <article>
+                    <h3>HTML</h3>
+                    <p>HTML (HyperText Markup Language) é uma linguagem de marcação, é usada para criar páginas Web.</p>
+                </article>
+                <article>
+                    <h3>CSS</h3>
+                    <p>CSS é uma linguagem de folhas de estilo, que serve para dar estilo nas páginas Web, atua junto com o HTML e o Javascript.</p>
+                </article>
+                <article>
+                    <h3>Javascript</h3>
+                    <p>Javascript é uma ótima linguagem de programação, com ela é possível fazer praticamente qualquer coisa, com inúmeros frameworks e bibliotecas.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galeria</h2>
+            <p class="grid-description">Veja algumas imagens aleatórias</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contato</h2>
+                <p>Caso queira me contatar, preencha os dados a seguir ou me mande uma mensagem no WhatsApp: 51 992191122.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/contact-developer.svg"
+                    alt="Um homem segurando o logo do CSS, uma mulher empurando o logo do Javascript para o lado direito e outro homem segurando e analisando o logo do HTML">
+                <div class="contact-form">
+                    <fieldset class="form-grid">
+                        <legend>Contate-me</legend>
+                        <div class="form-group">
+                            <label for="first-name">Nome</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Sobrenome</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">WhatsApp</label>
+                            <input type="number" name="number" id="number" placeholder="Seu número de WhatsApp">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" cols="80" rows="10"
+                                placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Enviar mensagem</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+    </section>
+    <footer id="footer" class="footer white-bg">
+        <p>Feito por Rodrigo Brentano</p>
+    </footer>
+    <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
